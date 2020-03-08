@@ -35,7 +35,7 @@ export default class Collapsible extends Component {
     };
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (!nextProps.collapsed && !this.props.collapsed) {
       this.setState({ measured: false }, () =>
         this._componentWillReceiveProps(nextProps)
