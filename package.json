@@ -32,7 +32,7 @@
   "homepage": "https://github.com/oblador/react-native-collapsible",
   "devDependencies": {
     "babel-eslint": "^7.2.3",
-    "eslint": "^3.17",
+    "eslint": "^4.18",
     "eslint-config-prettier": "^2.3.0",
     "eslint-plugin-babel": "^4.1.1",
     "eslint-plugin-flowtype": "^2.35.0",
