@@ -77,7 +77,7 @@ export default class Collapsible extends Component {
               () => callback(this.props.collapsedHeight)
             );
           } else {
-            this.contentHandle.getNode().measure((x, y, width, height) => {
+            this.contentHandle.measure((x, y, width, height) => {
               this.setState(
                 {
                   measuring: false,
@@ -142,6 +142,7 @@ export default class Collapsible extends Component {
       toValue: height,
       duration,
       easing,
+      useNativeDriver: false
     }).start(() => this.setState({ animating: false }));
   }
 
